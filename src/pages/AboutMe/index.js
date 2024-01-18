@@ -5,7 +5,7 @@ function AboutMe() {
     return (
         <div className="about-me">
             <h2>About Me</h2>
-            <img src="Face-Photo.JPG" alt="Trystan Cortez" />
+            <img src="/img/Face-Photo.JPG" alt="Trystan Cortez" />
             <p>
                 I love video games and how they work in the background, which is why I have put my
                 foot in the door of coding. I love to explore new territories of coding and design by making
