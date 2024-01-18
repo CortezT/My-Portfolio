@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './style.css';
 
 function Footer() {
@@ -28,7 +29,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="social"
                 >
-                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-google"></i>
                 </a>
             </div>
         </footer>
