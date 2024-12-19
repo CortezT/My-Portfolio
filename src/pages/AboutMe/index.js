@@ -7,18 +7,10 @@ function AboutMe() {
             <h2>About Me</h2>
             <img src="/img/Face-Photo.JPG" alt="Trystan Cortez" />
             <p>
-                I love video games and how they work in the background, which is why I have put my
-                foot in the door of coding. I love to explore new territories of coding and design by making
-                simple mods for video games. I have dabbled in a little bit of Python but have found
-                that I like javaScript more. My ultimate goal is to learn C++ later in my career as a
-                coder so that I can focus more on Game design.
+                I am passionate about coding and exploring the technical intricacies that bring applications and designs to life. My journey into development started with a fascination for how video games operate behind the scenes. This curiosity has driven me to experiment with coding projects, including creating mods for video games. While I’ve explored Python, I’ve discovered a strong preference for JavaScript and its versatility in front-end development. Looking ahead, I aspire to deepen my knowledge in C++ to pursue my long-term goal of contributing to game design and development.
             </p>
             <p>
-                Currently I am in the Texas Army National Guard and have been over seas on Deployment.
-                Being overseas was an Interesting experience for me and I wish to go back and explore other countries.
-                My all time dream location to visit is Japan during the Cherry Blossom season beacuse those trees
-                are the prettiest trees on planet Earth and they take my breath away everytime is see one.
-
+                In addition to my technical interests, I bring a strong sense of discipline and adaptability gained from my service in the Texas Army National Guard, including an overseas deployment. These experiences have instilled in me a commitment to teamwork, problem-solving, and continuous growth. Outside of work, I am eager to explore the world and immerse myself in new cultures. Visiting Japan during cherry blossom season remains a dream of mine, as I find inspiration in the beauty of nature and the innovation of different traditions.
             </p>
         </div>
     );
