@@ -7,10 +7,10 @@ This application is to show off my cridentials and experiences as well as to sho
 Wbsite URL: https://trystancortezportfolio.netlify.app/
 
 ## Visual
-- ![About_Me](https://github.com/CortezT/Progressive-Web-Applications/assets/126823522/70005a4e-98d4-410f-b8cc-4c60c55e0a63)
-- ![Portfolio](https://github.com/CortezT/Progressive-Web-Applications/assets/126823522/2f1ebf7d-2f17-4771-b57e-c34e73bf3f33)
+- ![About ME](https://github.com/user-attachments/assets/07c99172-a9cc-496d-9809-874cfe50a609)
+- ![Portfolio](https://github.com/user-attachments/assets/07942c70-b1bd-426b-a49c-b1e4c70d33ae)
 - ![Contact_Me](https://github.com/CortezT/Progressive-Web-Applications/assets/126823522/96d766a5-3790-48cb-9f26-cf6463e52b08)
-- ![Resume](https://github.com/CortezT/Progressive-Web-Applications/assets/126823522/6f601a33-780e-4f5e-91ac-52e7e727d286)
+- ![Resume page](https://github.com/user-attachments/assets/4e3eec28-767e-4508-a2b3-2aca1cffd220)
 
 ## Installation
 
