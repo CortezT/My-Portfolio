@@ -4,42 +4,57 @@ import './style.css';
 function Resume() {
     return (
         <div className="resume">
-            <h2>Trystan Cortez Resume</h2>
+            <h1>Trystan Cortez</h1>
+            <h3>Full Stack Web Developer | U.S. Army National Guard</h3>
+
+            <section className="contact">
+                <p>
+                    <strong>Email:</strong> <a href="mailto:trystan.m.cortez@gmail.com">trystan.m.cortez@gmail.com</a>
+                </p>
+                <p>
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/trystan-cortez/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/trystan-cortez/</a>
+                </p>
+                <p>
+                    <strong>GitHub:</strong> <a href="https://github.com/CortezT" target="_blank" rel="noopener noreferrer">https://github.com/CortezT</a>
+                </p>
+            </section>
 
             <section className="education">
                 <h3>Education</h3>
-                <h4>High School Deploma 2019 (New Waverly High School)</h4>
-                <h4>Advanced Individual Training for 14G 2019-2020 (Army - Air Defence Battle Management System Operator)</h4>
-                <h4>University of Texas Full Stack Developer Bootcamp 2023-2024</h4>
+                <ul>
+                    <li><strong>University of Texas</strong> | Full Stack Web Developer Bootcamp | 2023–2024</li>
+                    <li><strong>Advanced Individual Training (AIT)</strong> | 14G - Army Air Defense Battle Management System Operator | 2019–2020</li>
+                    <li><strong>New Waverly High School</strong> | High School Diploma | 2019</li>
+                </ul>
             </section>
 
             <section className="experience">
-                <h3>Work Experience</h3>
-                <h4>Texas Army National Guard</h4>
-                <p>- Deployed over seas for 10 months.</p>
-                <p>- Deployed to the Texas border for a year and a half as an HR representative.</p>
+                <h3>Professional Experience</h3>
+                <h4>Texas Army National Guard | E-5 Sergeant</h4>
+                <ul>
+                    <li>Deployed overseas for 10 months as part of a tactical operations unit.</li>
+                    <li>Served as an HR Representative during a year-and-a-half deployment to the Texas border, managing personnel records for thousands of soldiers.</li>
+                    <li>Adapted quickly to various roles, demonstrating flexibility and leadership in diverse environments.</li>
+                </ul>
             </section>
 
             <section className="skills">
-                <h3>Skills</h3>
-                <p>
-                    I am very skilled at adaptng to new enviroments and being able to learn new material. In the National Guard
-                    you are not always doing the MOS you were trained to do and are often found doing other peoples jobs. This happened
-                    to me at the Texas border when I was assigned to be ab HR rep for thousands of soldiers in Eagle PASS Texas.
-                    I was able to quickly figure out how to do the job and did it with no complaint.Being in the military has
-                    taught me a lot about being ready for any obstical that might come my way.
-                </p>
-                <p>
-                    Another skill I have is being able to work in any enviroment and get along with everyone. My team building
-                    skills are not an issue and the military has taught me how to be respectful of and understandiong of others.
-                    I have worked with many people over the past 5 years in the military allowing me to be subject to all sorts
-                    of personalities and culturs. These experiences have helped me become a better teammate no matter where I find myself.
-                </p>
+                <h3>Core Competencies</h3>
+                <ul>
+                    <li>Adaptability in dynamic environments and problem-solving in high-pressure situations.</li>
+                    <li>Effective communication and team-building skills honed through military service and collaborative projects.</li>
+                    <li>Quick learner, capable of mastering new tools and technologies in a fast-paced environment.</li>
+                    <li>Proficient in Full Stack Web Development: React, JavaScript, HTML, CSS, Node.js, Express, SQL, MongoDB.</li>
+                </ul>
             </section>
 
             <section className="certifications">
                 <h3>Certifications</h3>
-                <h4>University of Texas Full Stack Web Developer</h4>
+                <ul>
+                    <li>Full Stack Web Developer | University of Texas Bootcamp</li>
+                    <li>CompTIA Security+ (pending)</li>
+                    <li>Certified Scrum Master (CSM) (pending)</li>
+                </ul>
             </section>
 
             <a
@@ -47,7 +62,7 @@ function Resume() {
                 download
                 className="resume-download"
             >
-                Download Full Resume Here
+                Download Full Resume
             </a>
         </div>
     );

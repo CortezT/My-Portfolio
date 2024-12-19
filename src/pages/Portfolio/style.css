@@ -1,57 +1,117 @@
 .portfolio {
-    max-width: 1000px;
+    max-width: 1200px;
+    /* Increased max-width for better use of space */
     margin: 0 auto;
-    padding: 20px;
+    /* Center align the portfolio section */
+    padding: 40px 20px;
+    /* Add more padding for spacing */
+    text-align: center;
+    /* Center align the heading */
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    /* Larger and more prominent heading */
+    margin-bottom: 30px;
+    /* Space below the heading */
+    color: #333;
+    /* Darker color for emphasis */
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* Wrap projects on smaller screens */
+    gap: 30px;
+    /* Increased gap for better spacing */
+    justify-content: center;
+    /* Center projects in the container */
 }
 
 .project {
-    flex: 1 1 calc(30% - 20px);
+    flex: 1 1 calc(33.333% - 30px);
+    /* Create a 3-column layout */
+    max-width: 300px;
+    /* Restrict maximum size for consistency */
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px;
+    /* Smoother corners */
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+    /* Ensure consistent background */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
 }
 
 .project:hover {
     transform: scale(1.05);
+    /* Subtle scaling on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
 }
 
 .project img {
     width: 100%;
-    height: auto;
+    /* Ensure images take full width of the container */
+    height: 200px;
+    /* Uniform height for images */
+    object-fit: cover;
+    /* Ensure images fit nicely within their area */
     border-bottom: 1px solid #ddd;
 }
 
 .project-content {
-    padding: 15px;
+    padding: 20px;
+    /* Increased padding for better spacing */
 }
 
 .project h3 {
-    margin-top: 0;
+    margin: 0 0 10px;
+    /* Space below the project title */
+    font-size: 20px;
+    /* Larger title for readability */
+    color: #333;
 }
 
 .project p {
     color: #555;
+    font-size: 14px;
+    /* Slightly smaller font for descriptions */
+    line-height: 1.6;
+    /* Improve readability */
 }
 
 .project-links {
     display: flex;
     justify-content: space-between;
+    /* Spread links evenly */
+    align-items: center;
     margin-top: 15px;
+    gap: 10px;
+    /* Space between the links */
 }
 
 .project-links a {
+    display: inline-block;
+    /* Ensure consistent clickable area */
+    padding: 10px 15px;
+    /* Add padding for button-like appearance */
+    background-color: #007bff;
+    /* Use a blue color for the links */
     color: #ffffff;
+    /* Ensure text contrasts with the background */
+    border-radius: 8px;
+    /* Rounded button style */
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .project-links a:hover {
-    text-decoration: underline;
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    text-decoration: none;
+    /* Prevent underline */
 }
