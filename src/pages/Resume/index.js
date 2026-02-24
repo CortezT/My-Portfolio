@@ -5,7 +5,6 @@ function Resume() {
     return (
         <div className="resume">
             <h1>Trystan M. Cortez</h1>
-            <h3>Web Developer | Texas Army National Guard Sergeant (E-5)</h3>
 
             <section className="contact">
                 <p>
