@@ -163,7 +163,7 @@ function Resume() {
             </section>
 
             <a
-                href="/img/Trystan_Cortez_Resume.pdf"
+                href="/img/Resume(2026).pdf"
                 download
                 className="resume-download"
             >
