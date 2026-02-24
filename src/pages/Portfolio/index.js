@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from '../../components/Project';
 import './style.css';
 
 function Portfolio() {
@@ -6,83 +7,79 @@ function Portfolio() {
         {
             title: 'Employee Tracker',
             description:
-                'This repo allows users to use a tracker that lists all employee roles, employee names, and departments.',
+                'CLI-based employee management app for viewing and updating employees, roles, and departments.',
             imageUrl: '/img/Employee Tracker.png',
             repoUrl: 'https://github.com/CortezT/Employee-Tracker',
+            tech: ['Node.js', 'Inquirer', 'MySQL'],
+            status: 'Completed',
         },
         {
             title: 'Work Day Scheduler',
-            description: 'A simple calendar app for scheduling your work day.',
+            description:
+                'A browser-based daily scheduler for saving tasks by time block with persistent local storage.',
             imageUrl: '/img/Work Day Scheduler.png',
             projectUrl: 'https://cortezt.github.io/Work-Schedule/',
             repoUrl: 'https://github.com/CortezT/Work-Schedule',
+            tech: ['JavaScript', 'HTML', 'CSS'],
+            status: 'Completed',
         },
         {
-            title: 'City-Weather',
-            description: 'Website designed to produce the weather forecast of a given city.',
+            title: 'City Weather',
+            description:
+                'Weather dashboard that fetches forecast data for searched cities and stores recent searches.',
             imageUrl: '/img/City-Weather.png',
             projectUrl: 'https://cortezt.github.io/City-Weather/',
             repoUrl: 'https://github.com/CortezT/City-Weather',
+            tech: ['JavaScript', 'REST API', 'HTML/CSS'],
+            status: 'Completed',
         },
         {
-            title: 'Progressive-Web-Application',
-            description: 'This application is a simple text editor.',
+            title: 'Progressive Web App Text Editor',
+            description:
+                'A PWA text editor with offline capability and installable behavior using service workers.',
             imageUrl: '/img/TextEditor.png',
             projectUrl: 'https://simple-txt-editor.onrender.com/',
             repoUrl: 'https://github.com/CortezT/Progressive-Web-Applications',
+            tech: ['JavaScript', 'PWA', 'Webpack'],
+            status: 'Completed',
         },
         {
             title: 'Taking Note',
-            description: 'This application allows users to store and delete notes.',
+            description:
+                'Note-taking app that lets users create, save, and delete notes through an Express backend.',
             imageUrl: '/img/Note-Taker front page.png',
             projectUrl: 'https://takingnote-14e8da777627.herokuapp.com',
             repoUrl: 'https://github.com/CortezT/Taking-note',
+            tech: ['Node.js', 'Express', 'JavaScript'],
+            status: 'Completed',
         },
         {
             title: 'JavaScript Calculator',
             description:
-                'A simple, responsive JavaScript calculator that performs basic arithmetic operations.',
+                'Responsive calculator UI for basic arithmetic operations with clean button layout and interaction.',
             imageUrl: '/img/JavaScript Calculator.png',
             repoUrl: 'https://github.com/CortezT/Calculator',
+            tech: ['JavaScript', 'HTML', 'CSS'],
+            status: 'Completed',
         },
     ];
 
-    const Project = ({ title, description, imageUrl, projectUrl, repoUrl }) => (
-        <div className="project">
-            <img src={imageUrl} alt={title} />
-            <div className="project-content">
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <div className="project-links">
-                    {projectUrl && (
-                        <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-                            Visit Website
-                        </a>
-                    )}
-                    <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-                        View Code
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
-
     return (
-        <div className="portfolio">
-            <h2>Portfolio</h2>
-            <div className="projects">
-                {projects.map((project, index) => (
-                    <Project
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        imageUrl={project.imageUrl}
-                        projectUrl={project.projectUrl}
-                        repoUrl={project.repoUrl}
-                    />
+        <section className="projects-page">
+            <div className="projects-page__header">
+                <h2>Projects</h2>
+                <p>
+                    A selection of web development projects showcasing front-end UI work,
+                    APIs, full-stack fundamentals, and application logic.
+                </p>
+            </div>
+
+            <div className="projects-grid">
+                {projects.map((project) => (
+                    <Project key={project.title} {...project} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -3,33 +3,42 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import './style.css';
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="footer">
-            <p className="footer-text">© 2024 Trystan Cortez</p>
+            <p className="footer-text">© {currentYear} Trystan Cortez</p>
+
             <div className="social-media-links">
                 <a
                     href="https://github.com/CortezT"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social"
+                    aria-label="GitHub"
+                    title="GitHub"
                 >
-                    <i className="fab fa-github"></i>
+                    <i className="fab fa-github" aria-hidden="true"></i>
                 </a>
+
                 <a
-                    href="https://www.linkedin.com/in/trystan-cortez-18543a268/"
+                    href="https://www.linkedin.com/in/trystan-cortez/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social"
+                    aria-label="LinkedIn"
+                    title="LinkedIn"
                 >
-                    <i className="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
+
                 <a
-                    href="https://mail.google.com/mail/u/1/#inbox"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:trystan.m.cortez@gmail.com"
                     className="social"
+                    aria-label="Email Trystan"
+                    title="Email"
                 >
-                    <i className="fab fa-google"></i>
+                    <i className="fas fa-envelope" aria-hidden="true"></i>
                 </a>
             </div>
         </footer>

@@ -1,117 +1,65 @@
-.portfolio {
-    max-width: 1200px;
-    /* Increased max-width for better use of space */
-    margin: 0 auto;
-    /* Center align the portfolio section */
-    padding: 40px 20px;
-    /* Add more padding for spacing */
+.projects-page {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px 24px;
+}
+
+.projects-page__header {
     text-align: center;
-    /* Center align the heading */
-}
-
-.portfolio h2 {
-    font-size: 32px;
-    /* Larger and more prominent heading */
-    margin-bottom: 30px;
-    /* Space below the heading */
-    color: #333;
-    /* Darker color for emphasis */
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    /* Wrap projects on smaller screens */
-    gap: 30px;
-    /* Increased gap for better spacing */
-    justify-content: center;
-    /* Center projects in the container */
-}
-
-.project {
-    flex: 1 1 calc(33.333% - 30px);
-    /* Create a 3-column layout */
-    max-width: 300px;
-    /* Restrict maximum size for consistency */
-    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #e8edf3;
     border-radius: 12px;
-    /* Smoother corners */
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-color: #fff;
-    /* Ensure consistent background */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    /* Add shadow for depth */
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
-.project:hover {
-    transform: scale(1.05);
-    /* Subtle scaling on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Enhanced shadow on hover */
+.projects-page__header h2 {
+    margin: 0 0 8px;
+    font-size: 1.8rem;
+    color: #1f2933;
 }
 
-.project img {
-    width: 100%;
-    /* Ensure images take full width of the container */
-    height: 200px;
-    /* Uniform height for images */
-    object-fit: cover;
-    /* Ensure images fit nicely within their area */
-    border-bottom: 1px solid #ddd;
+.projects-page__header p {
+    margin: 0;
+    color: #5f6b76;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 760px;
+    margin-inline: auto;
 }
 
-.project-content {
-    padding: 20px;
-    /* Increased padding for better spacing */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
 }
 
-.project h3 {
-    margin: 0 0 10px;
-    /* Space below the project title */
-    font-size: 20px;
-    /* Larger title for readability */
-    color: #333;
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-.project p {
-    color: #555;
-    font-size: 14px;
-    /* Slightly smaller font for descriptions */
-    line-height: 1.6;
-    /* Improve readability */
-}
+@media (max-width: 640px) {
+    .projects-page {
+        margin: 12px auto;
+        padding: 0 12px 18px;
+    }
 
-.project-links {
-    display: flex;
-    justify-content: space-between;
-    /* Spread links evenly */
-    align-items: center;
-    margin-top: 15px;
-    gap: 10px;
-    /* Space between the links */
-}
+    .projects-page__header {
+        padding: 14px;
+    }
 
-.project-links a {
-    display: inline-block;
-    /* Ensure consistent clickable area */
-    padding: 10px 15px;
-    /* Add padding for button-like appearance */
-    background-color: #007bff;
-    /* Use a blue color for the links */
-    color: #ffffff;
-    /* Ensure text contrasts with the background */
-    border-radius: 8px;
-    /* Rounded button style */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    transition: background-color 0.3s ease-in-out;
-}
+    .projects-page__header h2 {
+        font-size: 1.4rem;
+    }
 
-.project-links a:hover {
-    background-color: #0056b3;
-    /* Darker blue on hover */
-    text-decoration: none;
-    /* Prevent underline */
+    .projects-page__header p {
+        font-size: 0.9rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
