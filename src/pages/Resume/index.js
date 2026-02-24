@@ -4,56 +4,161 @@ import './style.css';
 function Resume() {
     return (
         <div className="resume">
-            <h1>Trystan Cortez</h1>
-            <h3>Full Stack Web Developer | U.S. Army National Guard</h3>
+            <h1>Trystan M. Cortez</h1>
 
             <section className="contact">
                 <p>
-                    <strong>Email:</strong> <a href="mailto:trystan.m.cortez@gmail.com">trystan.m.cortez@gmail.com</a>
+                    <strong>Location:</strong> Jarrell, TX
                 </p>
                 <p>
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/trystan-cortez/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/trystan-cortez/</a>
+                    <strong>Phone:</strong> <a href="tel:+19564343719">(956) 434-3719</a>
                 </p>
                 <p>
-                    <strong>GitHub:</strong> <a href="https://github.com/CortezT" target="_blank" rel="noopener noreferrer">https://github.com/CortezT</a>
+                    <strong>Email:</strong>{' '}
+                    <a href="mailto:trystan.m.cortez@gmail.com">trystan.m.cortez@gmail.com</a>
+                </p>
+                <p>
+                    <strong>LinkedIn:</strong>{' '}
+                    <a
+                        href="https://www.linkedin.com/in/trystan-cortez/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        linkedin.com/in/trystan-cortez
+                    </a>
+                </p>
+                <p>
+                    <strong>GitHub:</strong>{' '}
+                    <a
+                        href="https://github.com/CortezT"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        github.com/CortezT
+                    </a>
                 </p>
             </section>
 
-            <section className="education">
-                <h3>Education</h3>
+            <section className="summary">
+                <h3>Summary</h3>
+                <p>
+                    Web Developer with experience shipping production updates in WordPress/PHP and
+                    front-end (JavaScript, HTML, CSS). Strong in debugging and improving responsive
+                    UI/UX within existing codebases—delivering clean, maintainable fixes and iterative
+                    feature enhancements. Texas Army National Guard Sergeant (E-5) known for disciplined
+                    execution, clear communication, and ownership in fast-paced, team environments.
+                </p>
+            </section>
+
+            <section className="skills">
+                <h3>Skills</h3>
                 <ul>
-                    <li><strong>University of Texas</strong> | Full Stack Web Developer Bootcamp | 2023–2024</li>
-                    <li><strong>Advanced Individual Training (AIT)</strong> | 14G - Army Air Defense Battle Management System Operator | 2019–2020</li>
-                    <li><strong>New Waverly High School</strong> | High School Diploma | 2019</li>
+                    <li>Responsive Design</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>WordPress</li>
+                    <li>PHP</li>
+                    <li>Testing &amp; Debugging</li>
+                    <li>Version Control &amp; Workflow</li>
+                    <li>Chrome DevTools</li>
                 </ul>
             </section>
 
             <section className="experience">
                 <h3>Professional Experience</h3>
-                <h4>Texas Army National Guard | E-5 Sergeant</h4>
-                <ul>
-                    <li>Deployed overseas for 10 months as part of a tactical operations unit.</li>
-                    <li>Served as an HR Representative during a year-and-a-half deployment to the Texas border, managing personnel records for thousands of soldiers.</li>
-                    <li>Adapted quickly to various roles, demonstrating flexibility and leadership in diverse environments.</li>
-                </ul>
+
+                <div className="job">
+                    <h4>Web Developer</h4>
+                    <p><strong>Next90 LLC</strong> – Remote | September 2025 – February 2026</p>
+                    <ul>
+                        <li>
+                            Supported development of the New ACUnit WordPress website, delivering iterative UI
+                            and functionality updates using PHP, JavaScript, HTML, and CSS.
+                        </li>
+                        <li>
+                            Implemented a new “Ceiling” selection path in the Split System flow, enforcing
+                            business rules (restricted tonnage options; removed invalid combinations) to improve
+                            quote accuracy.
+                        </li>
+                        <li>
+                            Updated conditional logic to hide Gas Furnace for Ceiling and auto-select
+                            Electric/Heat Pump, reducing friction by skipping unnecessary steps in the user journey.
+                        </li>
+                        <li>
+                            Resolved responsive UI defects and improved component consistency (card sizing,
+                            alignment, spacing) to enhance usability across mobile and desktop breakpoints.
+                        </li>
+                        <li>
+                            Fixed a Home V2 header/logo mobile display issue by updating template behavior and
+                            scroll logic for reliable visibility and a cleaner UX.
+                        </li>
+                        <li>
+                            Performed debugging and QA in an existing codebase, validating changes across
+                            breakpoints and preventing regressions between product flows (Mini Split vs Split System).
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="job">
+                    <h4>Personnel Actions Analyst</h4>
+                    <p><strong>Texas Military Department</strong> – Austin, TX | April 2021 – January 2025</p>
+                    <ul>
+                        <li>
+                            Streamlined the Personnel Record Management System (PEMS), reducing retrieval time by
+                            30% and minimizing data errors.
+                        </li>
+                        <li>
+                            Conducted a full audit and transitioned to a digital filing system, ensuring real-time
+                            updates and improved data accuracy.
+                        </li>
+                        <li>
+                            Optimized onboarding/offboarding processes, reducing processing time for personnel by 40%.
+                        </li>
+                        <li>
+                            Coordinated cross-department workflows to eliminate bottlenecks and standardize documentation.
+                        </li>
+                        <li>
+                            Developed a structured training program for incoming HR personnel, improving new-hire
+                            productivity by 25% within their first three months.
+                        </li>
+                        <li>
+                            Designed training modules, job aids, and mentorship programs to strengthen HR operational knowledge.
+                        </li>
+                        <li>
+                            Maintained personnel records and statistical data in compliance with regulations.
+                        </li>
+                    </ul>
+                </div>
             </section>
 
-            <section className="skills">
-                <h3>Core Competencies</h3>
-                <ul>
-                    <li>Adaptability in dynamic environments and problem-solving in high-pressure situations.</li>
-                    <li>Effective communication and team-building skills honed through military service and collaborative projects.</li>
-                    <li>Quick learner, capable of mastering new tools and technologies in a fast-paced environment.</li>
-                    <li>Proficient in Full Stack Web Development: React, JavaScript, HTML, CSS, Node.js, Express, SQL, MongoDB.</li>
-                </ul>
+            <section className="projects">
+                <h3>Projects</h3>
+                <div className="project">
+                    <h4>React Portfolio Website</h4>
+                    <p><strong>Tech:</strong> React, JavaScript, HTML, CSS</p>
+                    <ul>
+                        <li>
+                            Built a responsive portfolio site with reusable components and clean layout patterns
+                            to showcase web projects and skills.
+                        </li>
+                        <li>
+                            Implemented mobile-first styling and iterative UI refinements to ensure consistent
+                            presentation across devices.
+                        </li>
+                    </ul>
+                </div>
             </section>
 
-            <section className="certifications">
-                <h3>Certifications</h3>
+            <section className="education">
+                <h3>Education &amp; Training</h3>
                 <ul>
-                    <li>Full Stack Web Developer | University of Texas Bootcamp</li>
-                    <li>CompTIA Security+ (pending)</li>
-                    <li>Certified Scrum Master (CSM) (pending)</li>
+                    <li>
+                        <strong>Business Intelligence Analytics Program</strong> – TripleTen (Graduation: 2025)
+                    </li>
+                    <li>
+                        <strong>Coding Boot Camp Certificate Program</strong> – University of Texas at Austin
+                        (Graduation: 2024)
+                    </li>
                 </ul>
             </section>
 
