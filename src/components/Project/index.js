@@ -1,34 +1,60 @@
 import React from 'react';
 import './style.css';
 
-function Project({ title, description, imageUrl, projectUrl, repoUrl }) {
+function Project({
+    title,
+    description,
+    imageUrl,
+    projectUrl,
+    repoUrl,
+    tech = [],
+    status = 'Completed',
+}) {
     return (
-        <div className="project">
-            <h3 className="project-title">{title}</h3>
-            <img className="project-image" src={imageUrl} alt={title} />
+        <article className="project-card">
+            <img className="project-card__image" src={imageUrl} alt={title} />
 
-            <p className="project-description">{description}</p>
+            <div className="project-card__body">
+                <div className="project-card__top">
+                    <h3 className="project-card__title">{title}</h3>
+                    <span className="project-card__status">{status}</span>
+                </div>
 
-            <div className="project-links">
-                <a
-                    className="project-link"
-                    href={projectUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Visit Website
-                </a>
+                <p className="project-card__description">{description}</p>
 
-                <a
-                    className="project-link"
-                    href={repoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub Repository
-                </a>
+                {tech.length > 0 && (
+                    <div className="project-card__tags">
+                        {tech.map((item) => (
+                            <span key={item} className="project-card__tag">
+                                {item}
+                            </span>
+                        ))}
+                    </div>
+                )}
+
+                <div className="project-card__links">
+                    {projectUrl && (
+                        <a
+                            className="project-card__link project-card__link--primary"
+                            href={projectUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo
+                        </a>
+                    )}
+
+                    <a
+                        className="project-card__link"
+                        href={repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </div>
             </div>
-        </div>
+        </article>
     );
 }
 

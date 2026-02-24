@@ -1,34 +1,36 @@
-# My-Portfolio
+# Trystan Cortez Portfolio
 
 ## Description
 
-This application is to show off my cridentials and experiences as well as to show how capable I am at using REACT.
+This is my personal portfolio website, built with React, to showcase my web development projects, technical skills, and professional experience.
 
-Wbsite URL: https://trystancortezportfolio.netlify.app/
+The site includes:
+- **About Me** section
+- **Projects** page with featured work
+- **Contact** page
+- **Resume** page with downloadable PDF resume
 
-## Visual
-- ![About ME](https://github.com/user-attachments/assets/07c99172-a9cc-496d-9809-874cfe50a609)
-- ![Portfolio](https://github.com/user-attachments/assets/07942c70-b1bd-426b-a49c-b1e4c70d33ae)
-- ![Contact_Me](https://github.com/CortezT/Progressive-Web-Applications/assets/126823522/96d766a5-3790-48cb-9f26-cf6463e52b08)
-- ![Resume page](https://github.com/user-attachments/assets/4e3eec28-767e-4508-a2b3-2aca1cffd220)
+## Live Site
+
+- **Portfolio Website:** https://trystancortezportfolio.netlify.app/
+
+## Screenshots
+
+- ![About Me](https://github.com/user-attachments/assets/68ef184a-65ea-4e4e-a732-a33b01e08fda)
+- ![Projects](https://github.com/user-attachments/assets/22d764db-484a-455f-9775-2653e89a589c)
+- ![Contact](https://github.com/user-attachments/assets/c30fc300-7a72-4e3d-9825-931b3fa7dc3b)
+- ![Resume](https://github.com/user-attachments/assets/2f9ffaff-ca7a-4017-a98d-fa58d45c19d5)
+
+## Built With
+
+- React
+- JavaScript
+- HTML5
+- CSS3
+- React Router
 
 ## Installation
 
-- First clone the repo into your command promt of choice.
-
-- Then open the code into VS code, or whatever you wish to use.
-
-- npm install into base directory.
-
-- Locate the src folder and npm install and proceed to do the same with the public folder.
-
-- Once those steps are done open your turminal in the base directory and "npm start"
-
-## Credits
-
-- REACT
-
-## Contact me
-
-- Github : https://github.com/CortezT
-- Email: trystan.m.cortez@gmail.com
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/CortezT/My-Portfolio.git
